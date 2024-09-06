@@ -8,7 +8,7 @@ module.exports = {
 				counter: "#5c589b",
 				usrname: "#313942",
 				otherbg: "#5358b2",
-				action: "#e4e6ef",
+				action: "#e4e6ef4f",
 			},
 		},
 	},
