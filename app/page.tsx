@@ -4,7 +4,7 @@ import Comment from "./components/Comment";
 
 export default function Page() {
 	return (
-		<div className="container mx-auto">
+		<div className="container flex justify-center items-center h-lvh mx-auto">
 			<Comment />
 		</div>
 	);

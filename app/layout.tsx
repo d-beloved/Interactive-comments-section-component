@@ -8,7 +8,7 @@ export default function RootLayout({
 }) {
 	return (
 		<html lang="en">
-			<body className="aspect-auto">{children}</body>
+			<body className="aspect-auto bg-mainbg">{children}</body>
 		</html>
 	);
 }
