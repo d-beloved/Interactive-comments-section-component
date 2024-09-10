@@ -3,7 +3,7 @@ import { Comment as CommentProps } from "../lib/interfaces";
 
 const Comment: FunctionComponent = () => {
 	return (
-		<div className="flex items-center w-3/4 p-8 bg-white gap-8 rounded-2xl border-solid border-gray-100 border-x-2 border-y-4">
+		<div className="flex items-center p-8 bg-white gap-8 rounded-2xl border-solid border-gray-100 border-x-2 border-y-4 shadow-md">
 			<div className="flex flex-col items-center gap-4 bg-action rounded-2xl p-4 h-max">
 				<img
 					className="w-9 cursor-pointer"
@@ -32,15 +32,15 @@ const Comment: FunctionComponent = () => {
 						</span>
 						<p className="text-gray-400 font-bold">1 month ago</p>
 					</div>
-					<div className="flex gap-2 items-center">
-						<div className="cursor-pointer">
+					<div className="flex gap-2 items-center cursor-pointer">
+						<div>
 							<img src="./images/icon-reply.svg" alt="reply" />
 						</div>
 						<span className="text-otherbg font-bold">Reply</span>
 					</div>
 					<div className="flex gap-4">
-						<div className="flex gap-2 items-center">
-							<div className="cursor-pointer">
+						<div className="flex gap-2 items-center cursor-pointer">
+							<div>
 								<img
 									src="./images/icon-delete.svg"
 									alt="delete"
@@ -50,8 +50,8 @@ const Comment: FunctionComponent = () => {
 								Delete
 							</span>
 						</div>
-						<div className="flex gap-2 items-center">
-							<div className="cursor-pointer">
+						<div className="flex gap-2 items-center cursor-pointer">
+							<div>
 								<img src="./images/icon-edit.svg" alt="edit" />
 							</div>
 							<span className="text-otherbg font-bold">Edit</span>
@@ -61,7 +61,6 @@ const Comment: FunctionComponent = () => {
 				<p className="text-gray-400 font-semibold text-base text-[18px]">
 					<span className="text-usrname">@juliusomo</span> I hbvveve
 					uceivne eineiven einceocnrb incwocnvr ivnrvornve
-					incosccnveve dovorvrnbni sconeovrbr dvonrovevnowsc eovnribr
 					incosccnveve dovorvrnbni sconeovrbr dvonrovevnowsc eovnribr
 					incosccnveve dovorvrnbni sconeovrbr dvonrovevnowsc eovnribr
 				</p>
