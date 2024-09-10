@@ -1,5 +1,6 @@
 import { FunctionComponent } from "react";
 import { Comment as CommentProps } from "../lib/interfaces";
+import Link from "next/link";
 
 const Comment: FunctionComponent = () => {
 	return (
@@ -40,15 +41,17 @@ const Comment: FunctionComponent = () => {
 					</div>
 					<div className="flex gap-4">
 						<div className="flex gap-2 items-center cursor-pointer">
-							<div>
-								<img
-									src="./images/icon-delete.svg"
-									alt="delete"
-								/>
-							</div>
-							<span className="text-red-400 font-bold">
-								Delete
-							</span>
+							<Link href="/?show=true">
+								<div>
+									<img
+										src="./images/icon-delete.svg"
+										alt="delete"
+									/>
+								</div>
+								<span className="text-red-400 font-bold">
+									Delete
+								</span>
+							</Link>
 						</div>
 						<div className="flex gap-2 items-center cursor-pointer">
 							<div>
