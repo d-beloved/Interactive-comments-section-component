@@ -20,3 +20,7 @@ export interface Image {
 	png?: string;
 	webp?: string;
 }
+
+export type SearchParamProps = {
+	searchParams: Record<string, string> | null | undefined;
+};
