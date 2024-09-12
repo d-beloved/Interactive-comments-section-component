@@ -5,22 +5,22 @@ import Link from "next/link";
 const CommentActions: FunctionComponent = () => {
 	return (
 		<div className="flex gap-4">
-			{/* <div className="flex gap-2 items-center cursor-pointer">
+			<div className="flex gap-2 items-center cursor-pointer hover:opacity-40">
 				<div>
 					<img src="./images/icon-reply.svg" alt="reply" />
 				</div>
 				<span className="text-otherbg font-bold">Reply</span>
-			</div> */}
+			</div>
 			<Link
 				href="/?show=true"
-				className="flex gap-2 items-center cursor-pointer"
+				className="flex gap-2 items-center cursor-pointer hover:opacity-40"
 			>
 				<div>
 					<img src="./images/icon-delete.svg" alt="delete" />
 				</div>
 				<span className="text-red-400 font-bold">Delete</span>
 			</Link>
-			<div className="flex gap-2 items-center cursor-pointer">
+			<div className="flex gap-2 items-center cursor-pointer hover:opacity-40">
 				<div>
 					<img src="./images/icon-edit.svg" alt="edit" />
 				</div>
@@ -36,7 +36,7 @@ const Comment: FunctionComponent = () => {
 			<div className="max-md:flex max-md:justify-between max-md:items-center max-md:gap-4 max-md:w-full">
 				<div className="flex md:flex-col items-start gap-4 bg-action rounded-2xl py-2 px-5 md:p-4 md:h-max">
 					<img
-						className="md:w-9 w-3 cursor-pointer"
+						className="md:w-9 w-3 cursor-pointer hover:brightness-50"
 						src="./images/icon-plus.svg"
 						alt="upvote"
 					/>
@@ -44,7 +44,7 @@ const Comment: FunctionComponent = () => {
 						5
 					</span>
 					<img
-						className="md:w-9 w-3 cursor-pointer"
+						className="md:w-9 w-3 cursor-pointer hover:brightness-50"
 						src="./images/icon-minus.svg"
 						alt="downvote"
 					/>

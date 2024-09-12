@@ -14,7 +14,7 @@ const UserImage = () => {
 
 const InputButton = () => {
 	return (
-		<button className="bg-otherbg text-white font-bold px-7 py-2 rounded-md">
+		<button className="bg-otherbg text-white font-bold px-7 py-2 rounded-md hover:opacity-50">
 			Send
 		</button>
 	);
