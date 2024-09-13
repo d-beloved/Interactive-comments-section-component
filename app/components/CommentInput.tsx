@@ -1,12 +1,14 @@
 import { FunctionComponent } from "react";
+import data from "../../data.json";
 
 const UserImage = () => {
+	const { image, username } = data.currentUser;
 	return (
 		<div className="w-8 h-8 sm:w-12 sm:h-12">
 			<img
 				className="w-full h-full rounded-full"
-				src="./images/avatars/image-juliusomo.png"
-				alt="Juliusomo profile picture"
+				src={image.png}
+				alt={`${username} picture`}
 			/>
 		</div>
 	);

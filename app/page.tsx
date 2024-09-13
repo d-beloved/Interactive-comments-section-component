@@ -10,7 +10,7 @@ const Page: FunctionComponent<SearchParamProps> = ({ searchParams }) => {
 	return (
 		<div className={`${show ? "h-screen overflow-hidden pr-[15px]" : ""}`}>
 			<div className="sm:container flex flex-col justify-center items-center sm:mx-auto w-full my-14 gap-6">
-				<CommentGroup />
+				<CommentGroup comments={data.comments} />
 				<CommentInput />
 			</div>
 			{show && <DeleteModal />}

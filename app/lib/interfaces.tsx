@@ -1,22 +1,31 @@
-export interface Comment {
+export interface CommentComponentProps {
+	comment: CommentProps | ReplyProps;
+}
+
+export interface CommentProps {
 	id: number;
 	content: string;
 	createdAt: string;
 	score: number;
-	user: User;
-	replies: Reply[];
+	user: UserProps;
+	replies: ReplyProps[];
 }
 
-export interface Reply extends Omit<Comment, "replies"> {
+export interface ReplyProps {
+	id: number;
+	content: string;
+	createdAt: string;
+	score: number;
+	user: UserProps;
 	replyingTo: string;
 }
 
-export interface User {
-	image: Image;
+export interface UserProps {
+	image: ImageProps;
 	username: string;
 }
 
-export interface Image {
+export interface ImageProps {
 	png?: string;
 	webp?: string;
 }
