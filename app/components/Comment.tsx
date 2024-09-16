@@ -3,7 +3,7 @@ import Link from "next/link";
 import { CommentComponentProps } from "../lib/interfaces";
 import data from "../../data.json";
 
-const isCurrentUser = (username: string) => {
+const isCurrentUser = (username: string): boolean => {
 	return data.currentUser.username === username;
 };
 
